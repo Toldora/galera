@@ -547,39 +547,6 @@
     />
     <meta name="apple-touch-fullscreen" content="no" />
     <script>
-      var timeStamp = Playtech.Variables.modifiedDate || Date.now();
-      var favIconsSizes = [32, 57, 76, 96, 128, 192, 228];
-      favIconsSizes.forEach(function (size) {
-        var link = document.createElement("link");
-        link.href =
-          "https://www.galera.bet/favicons/favicon-" +
-          size +
-          ".png?t=" +
-          timeStamp;
-        link.sizes = size + "x" + size;
-        link.rel = "icon";
-        document.querySelector("head").appendChild(link);
-      });
-      var link = document.createElement("link");
-      link.href =
-        "https://www.galera.bet/favicons/favicon-196.png?t=" + timeStamp;
-      link.sizes = "196x196";
-      link.rel = "shortcut icon";
-      document.querySelector("head").appendChild(link);
-      var favIconsIosSizes = [120, 152, 180];
-      favIconsIosSizes.forEach(function (size) {
-        var link = document.createElement("link");
-        link.href =
-          "https://www.galera.bet/favicons/favicon-" +
-          size +
-          ".png?t=" +
-          timeStamp;
-        link.sizes = size + "x" + size;
-        link.rel = "apple-touch-icon";
-        document.querySelector("head").appendChild(link);
-      });
-    </script>
-    <script>
       if (!window.console) {
         window.console = {};
         window.console.log =
