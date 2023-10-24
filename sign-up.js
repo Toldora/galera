@@ -95,8 +95,12 @@ const onSubmit = async (event) => {
     formRef.innerHTML = JSON.stringify(error, null, 2);
   } finally {
     state.isSubmitLoading = false;
-    formRef.fieldset.disabled = false;
-    formRef.submitBtn.textContent = "Inscrever-se";
+    if (formRef.fieldset) {
+      formRef.fieldset.disabled = false;
+    }
+    if (formRef.submitBtn) {
+      formRef.submitBtn.textContent = "Inscrever-se";
+    }
   }
 };
 
